@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+
+option go_package = ".";
+
+message  Product {
+  string ID = 1;
+  string Name = 2;
+  string Description = 3;
+  string CategoryID = 4;
+  float UnitPrice = 5;
+  string CreatedAt = 6;
+  string UpdatedAt = 7;
+}
+
+message IdRequest {
+  string ID = 1;
+}
+
+service ProductService {
+  rpc AddProduct(Product) returns (Product);
+  rpc GetProduct(IdRequest) returns (Product);
+  rpc UpdateProduct(Product) returns (Product);
+  rpc DeleteProduct(IdRequest) returns(Product);
+}

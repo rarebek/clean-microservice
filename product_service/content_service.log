@@ -1,0 +1,2 @@
+2023-06-19T09:18:38.900+0500	INFO	app/app.go:117	gRPC Server Listening	{"url": ":50025"}
+2023-06-19T09:18:42.261+0500	INFO	app/main.go:36	Conten service stops !
